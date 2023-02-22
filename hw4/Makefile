@@ -3,7 +3,7 @@ EXEC_NAME := paging
 PROJ_NAME := hw4
 
 build:
-	g++ -o $(EXEC_NAME) $(EXEC_NAME).cc
+	g++ -O3 -o $(EXEC_NAME) $(EXEC_NAME).cc
 
 run:
 	./$(EXEC_NAME)
