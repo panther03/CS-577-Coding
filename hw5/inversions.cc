@@ -43,6 +43,7 @@ int merge(int arr[], int as, int c, int be) {
     int k = 0;
     while (i < c && j < be) {
         if (arr[j] < arr[i]) {
+            // significant inversion -> if (2 * arr[j] < arr[i])
             inv_cnt += c - i; // remaining length of A
             arr_s[k] = arr[j];
             j++;
