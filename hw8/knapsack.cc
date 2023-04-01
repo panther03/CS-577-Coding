@@ -54,6 +54,15 @@ int knapsack(int num_items, int capacity, item_t arr[]) {
                     (wi > w) ? 0 : (v[i-1][w-wi]+vi));
         }
     }
+
+    #ifdef DEBUG
+    for (int i = 0; i < num_items+1; i++) {
+        for (int w = 0; w < capacity+1; w++) {
+            cout << v[i][w] << " & ";
+        }
+        cout << endl;
+    }
+    #endif //DEBUG
     return v[num_items][capacity];
 }
 
