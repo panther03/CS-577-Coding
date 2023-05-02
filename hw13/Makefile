@@ -1,6 +1,6 @@
 # Change these for each homework!
-EXEC_NAME := bipartite
-PROJ_NAME := hw10
+EXEC_NAME := maxsat
+PROJ_NAME := hw13
 
 build:
 	g++ -O3 -o $(EXEC_NAME) $(EXEC_NAME).cc
